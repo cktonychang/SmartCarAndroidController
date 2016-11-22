@@ -1,0 +1,29 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" 
+     xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.dean.mobileauto.Main" >
+    <item
+        android:id="@+id/aboutUs"
+        android:orderInCategory="100"
+        android:title="关于我们"
+        android:numericShortcut="1"
+        android:alphabeticShortcut="a"
+        />
+  
+    <item
+        android:id="@+id/preferences"
+        android:orderInCategory="100"
+        android:title="设置"
+        android:numericShortcut="1"
+        android:alphabeticShortcut="a"
+        />
+
+    
+    <item
+        android:id="@+id/exit"
+        android:orderInCategory="100"
+        android:title="退出程序"
+        android:numericShortcut="1"
+        android:alphabeticShortcut="a"
+        />
+
+</menu>

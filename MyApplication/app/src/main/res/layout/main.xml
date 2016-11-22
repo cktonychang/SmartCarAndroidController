@@ -1,0 +1,264 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#36454e"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context="com.dean.mobileauto.Main" >
+
+    <RelativeLayout
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+        
+    <ImageView
+        android:id="@+id/imageViewTop"
+        android:layout_width="420dp"
+        android:layout_height="350dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:src="@drawable/video" />
+    
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/GestureLayout"
+        android:layout_gravity="center_horizontal"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        </LinearLayout>
+   
+    <RelativeLayout
+        android:id="@+id/KeyboradControlLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    
+    <!-- 滑块 -->
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayout2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="38dp"
+        >
+
+    <ImageView
+        android:id="@+id/ivOrbit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/orbit" />
+     
+    <ImageButton
+        android:id="@+id/iBslide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#00000000"
+        android:src="@drawable/slide" />
+    
+    
+     </RelativeLayout>
+
+    <!-- 舵机 -->
+    <RelativeLayout
+        android:id="@+id/RelativeLayout4"
+        android:layout_toRightOf="@+id/RelativeLayout2"
+        android:layout_toLeftOf="@+id/RelativeLayout3"
+        android:layout_centerVertical="true"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+    <ImageButton
+        android:id="@+id/iBdjUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/up2"
+        android:background="#00000000"
+        />
+    <ImageButton
+        android:id="@+id/iBdjDown"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/iBdjUp"
+        android:src="@drawable/down2"
+        android:background="#00000000"
+        />
+
+    </RelativeLayout>
+
+
+
+    <!-- 方向盘 --> 
+    <RelativeLayout
+        android:id="@+id/RelativeLayout3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:layout_marginRight="12dp"
+        android:layout_alignParentRight="true"
+        >
+        
+    <ImageView
+        android:id="@+id/imageCircle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/upbk" />
+
+    <ImageButton
+        android:id="@+id/iBdown"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/imageCircle"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="17dp"
+        android:background="#00000000"
+        android:src="@drawable/down" />
+
+    <ImageButton
+        android:id="@+id/iBup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/imageCircle"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="17dp"
+        android:background="#00000000"
+        android:src="@drawable/up" />
+
+    <ImageButton
+        android:id="@+id/iBfLeft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:layout_marginLeft="10dp"
+        android:background="#00000000"
+        android:src="@drawable/transparent" />
+
+    <ImageButton
+        android:id="@+id/iBfRight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@id/imageCircle"
+        android:layout_marginTop="14dp"
+        android:background="#00000000"
+        android:src="@drawable/transparent" />
+
+    <ImageButton
+        android:id="@+id/iBleft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/imageCircle"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="17dp"
+        android:background="#00000000"
+        android:src="@drawable/left" />
+
+    <ImageButton
+        android:id="@+id/iBright"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@id/imageCircle"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="17dp"
+        android:background="#00000000"
+        android:src="@drawable/right" />
+
+    <ImageButton
+        android:id="@+id/iBbLeft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#00000000"
+        android:src="@drawable/transparent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="88dp"
+        />
+
+    <ImageButton
+        android:id="@+id/iBbRight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#00000000"
+        android:src="@drawable/transparent"
+        android:layout_marginTop="88dp"
+        android:layout_toRightOf="@+id/iBdown"
+        />
+
+    </RelativeLayout>
+
+
+
+    </RelativeLayout>
+  
+   
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent" >
+
+        <RelativeLayout
+            android:id="@+id/layoutbutton"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent" >
+            
+        <ImageButton
+            android:id="@+id/iBcom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"
+            android:background="#00000000"
+            android:src="@drawable/camera" />
+
+        <ImageButton
+            android:id="@+id/iBconnect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:background="#00000000"
+            android:src="@drawable/connect" />
+
+        <ImageButton
+            android:id="@+id/iBvoiceMain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_toLeftOf="@+id/iBconnect"
+            android:layout_marginRight="13dp"
+            android:background="#00000000"
+            android:src="@android:drawable/ic_btn_speak_now" />
+        
+         <ImageButton
+             android:id="@+id/iBgravity"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignParentBottom="true"
+             android:layout_marginLeft="13dp"
+             android:layout_toRightOf="@+id/iBcom"
+             android:background="#00000000"
+             android:src="@drawable/gravity" />
+
+        <ListView
+            android:id="@+id/lvVoiceMain"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_above="@+id/iBcom" >
+        </ListView>
+
+        <TextView
+            android:id="@+id/tvCommand"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:text="TextView" />
+            
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
